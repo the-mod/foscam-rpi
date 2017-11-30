@@ -1,0 +1,11 @@
+[Unit]
+Description=starts vlc player script
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/stream-vlc.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
